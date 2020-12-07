@@ -1,0 +1,36 @@
+
+.jtk-surface {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #EAEAEA;
+}
+
+.jtk-node {
+    width:100px;
+    color:white;
+    text-align: center;
+    padding:7px;
+}
+
+.jtk-overlay {
+    background-color: white;
+    padding:7px;
+}
+
+.jtk-node button {
+    margin:10px;
+}
+
+.colorButton {
+    position: absolute;
+    z-index: 1000;
+    top: 50px;
+    right: 101px;
+    background-color: blue;
+    padding: 20px;
+    outline: 0;
+    border: none;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 2px 2px 10px grey;
+}

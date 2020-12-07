@@ -1,0 +1,9 @@
+{
+  "nodes":[
+    { "id":"1", "type":"shin" },
+    { "id":"2", "type":"knee" }
+  ],
+  "edges":[
+    { "source":"1", "target":"2", "data":{"label":"isConnectedTo"}}
+  ]
+}
