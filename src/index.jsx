@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
 
-import { JsPlumbToolkitSurfaceComponent }  from 'jsplumbtoolkit-react';
-import { jsPlumbToolkit } from 'jsplumbtoolkit';
+import { JsPlumbToolkitSurfaceComponent }  from '@jsplumbtoolkit/react';
+import { jsPlumbToolkit } from '@jsplumbtoolkit/core';
 
 import BoneComponent from "./bone-component.jsx";
 
