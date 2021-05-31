@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
 
-import { StraightConnector, BlankEndpoint } from "@jsplumb/core";
+import { StraightConnector, BlankEndpoint, LabelOverlay, ArrowOverlay } from "@jsplumb/core";
 import { JsPlumbToolkitSurfaceComponent }  from '@jsplumbtoolkit/react';
 import { ready, newInstance } from '@jsplumbtoolkit/browser-ui';
 import { SpringLayout } from "@jsplumbtoolkit/layout-spring";
@@ -33,8 +33,8 @@ ready(() => {
                     anchor:"Continuous",
                     overlays:[
                         { type: LabelOverlay.type ,options: { location:0.5, label:"${label}"}},
-                        { type:ArrowOverlay.type, options:{ location:1} },
-                        { type:ArrowOverlay.type, options:{location:0, direction:-1}}
+                        { type: ArrowOverlay.type, options:{ location:1} },
+                        { type: ArrowOverlay.type, options:{location:0, direction:-1}}
                     ],
                     endpoint:BlankEndpoint.type
                 }
