@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
 
+import { StraightConnector, BlankEndpoint } from "@jsplumb/core";
 import { JsPlumbToolkitSurfaceComponent }  from '@jsplumbtoolkit/react';
-import { jsPlumbToolkit } from '@jsplumbtoolkit/core';
+import { ready, newInstance } from '@jsplumbtoolkit/browser-ui';
+import { SpringLayout } from "@jsplumbtoolkit/layout-spring";
 
 import BoneComponent from "./bone-component.jsx";
 
@@ -11,12 +13,12 @@ const randomColor = () => {
     return colors[Math.floor(Math.random() * colors.length)];
 };
 
-jsPlumbToolkit.ready(() => {
+ready(() => {
 
     function DemoComponent(props) {
 
         const surface = useRef(null);
-        const toolkit = jsPlumbToolkit.newInstance();
+        const toolkit = newInstance();
         const [currentColor, setColor] = useState(randomColor());
 
         const view = {
@@ -27,21 +29,21 @@ jsPlumbToolkit.ready(() => {
             },
             edges:{
                 "default":{
-                    connector:"Straight",
+                    connector:StraightConnector.type,
                     anchor:"Continuous",
                     overlays:[
-                        [ "Label", { location:0.5, label:"${label}"}],
-                        [ "Arrow", { location:1} ],
-                        [ "Arrow", {location:0, direction:-1}]
+                        { type: LabelOverlay.type ,options: { location:0.5, label:"${label}"}},
+                        { type:ArrowOverlay.type, options:{ location:1} },
+                        { type:ArrowOverlay.type, options:{location:0, direction:-1}}
                     ],
-                    endpoint:"Blank"
+                    endpoint:BlankEndpoint.type
                 }
             }
         };
 
         const renderParams = {
             layout:{
-                type:"Spring"
+                type:SpringLayout.type
             },
             zoomToFit:true,
             consumeRightClick:false
