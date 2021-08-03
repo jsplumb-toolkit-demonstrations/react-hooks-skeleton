@@ -12,11 +12,9 @@
   "dependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "@jsplumbtoolkit/browser-ui": "^5.0.0-RC1",
-    "@jsplumbtoolkit/react": "^5.0.0-RC1",
-    "@jsplumbtoolkit/layout-spring": "^5.0.0-RC1",
-    "@jsplumb/json-syntax-highlighter": "^1.0.4",
-    "@jsplumb/toolkit-demo-support": "^1.0.0"
+    "@jsplumbtoolkit/browser-ui-react": "^5.0.0-RC12",
+    "@jsplumbtoolkit/layout-spring": "^5.0.0-RC12",
+    "jsplumbtoolkit-demo-support": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",
