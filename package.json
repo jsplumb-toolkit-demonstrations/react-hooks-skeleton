@@ -12,8 +12,8 @@
   "dependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "@jsplumbtoolkit/browser-ui-react": "^5.0.0-RC12",
-    "@jsplumbtoolkit/layout-spring": "^5.0.0-RC12",
+    "@jsplumbtoolkit/browser-ui-react": "^5.0.0-RC13",
+    "@jsplumbtoolkit/layout-spring": "^5.0.0-RC13",
     "jsplumbtoolkit-demo-support": "^1.0.0"
   },
   "devDependencies": {
