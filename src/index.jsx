@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 import { JsPlumbToolkitSurfaceComponent }  from '@jsplumbtoolkit/browser-ui-react'
 import { StraightConnector, BlankEndpoint, LabelOverlay, ArrowOverlay } from '@jsplumbtoolkit/browser-ui'
 import { newInstance } from "@jsplumbtoolkit/browser-ui-react"
-import { SpringLayout } from "@jsplumbtoolkit/layout-spring"
+import { ForceDirectedLayout } from "@jsplumbtoolkit/layout-force-directed"
 
 import BoneComponent from "./bone-component.jsx"
 
@@ -41,7 +41,7 @@ function DemoComponent(props) {
 
     const renderParams = {
         layout:{
-            type:SpringLayout.type
+            type:ForceDirectedLayout.type
         },
         zoomToFit:true,
         consumeRightClick:false
@@ -62,7 +62,24 @@ function DemoComponent(props) {
     useEffect(() => {
         // NOTE here that the data is loaded over ajax, meaning asynchronous to this useEffect. Loading data directly inside the useEffect
         // can confuse React as it's in the middle of a render cycle.
+
+        /*
         toolkit.load({url:"data/data.json"});
+        //*/
+
+        //*
+         toolkit.load({
+            data:{
+                "nodes":[
+                    { "id":"1", "type":"shin" },
+                    { "id":"2", "type":"knee" }
+                ],
+                "edges":[
+                    { "source":"1", "target":"2", "data":{"label":"isConnectedTo"}}
+                ]
+            }
+        })
+        //*/
     }, []);
 
     return <div style={{width:"100%",height:"100%",display:"flex"}}>
@@ -71,5 +88,7 @@ function DemoComponent(props) {
     </div>
 }
 
-ReactDOM.render(<DemoComponent/>, document.querySelector(".jtk-demo-canvas"));
+const container = document.querySelector(".jtk-demo-canvas")
+const root = createRoot(container)
+root.render(<DemoComponent/>)
 
