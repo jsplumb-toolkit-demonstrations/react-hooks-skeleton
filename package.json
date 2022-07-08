@@ -1,27 +1,27 @@
 {
-  "name": "jsplumbtoolkit-react-hooks-skeleton",
-  "version": "5.8.0",
-  "description": "Integration between jsPlumb Toolkit and React - Skeleton, using Hooks",
-  "main": "index.js",
-  "author": "jsPlumb <hello@jsplumbtoolkit.com> (https://jsplumbtoolkit.com)",
-  "license": "Commercial",
-  "scripts": {
-    "build": "node ./node_modules/webpack/bin/webpack.js",
-    "start": "webpack-dev-server"
-  },
-  "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "@jsplumbtoolkit/browser-ui-react": "^5.8.0",
-    "@jsplumbtoolkit/layout-force-directed": "^5.8.0",
-    "jsplumbtoolkit-demo-support": "^1.0.0"
-  },
-  "devDependencies": {
-    "babel-core": "^6.22.1",
-    "babel-loader": "^6.2.10",
-    "babel-preset-es2015": "^6.22.0",
-    "babel-preset-react": "^6.22.0",
-    "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.4.1"
-  }
+    "name": "jsplumbtoolkit-react-hooks-skeleton",
+    "version": "5.8.0",
+    "description": "Integration between jsPlumb Toolkit and React - Skeleton, using Hooks",
+    "main": "index.js",
+    "author": "jsPlumb <hello@jsplumbtoolkit.com> (https://jsplumbtoolkit.com)",
+    "license": "Commercial",
+    "scripts": {
+        "build": "node ./node_modules/webpack/bin/webpack.js",
+        "start": "webpack-dev-server"
+    },
+    "dependencies": {
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
+        "@jsplumbtoolkit/browser-ui-react": "^5.9.0",
+        "@jsplumbtoolkit/layout-force-directed": "^5.9.0",
+        "jsplumbtoolkit-demo-support": "^1.0.0"
+    },
+    "devDependencies": {
+        "babel-core": "^6.22.1",
+        "babel-loader": "^6.2.10",
+        "babel-preset-es2015": "^6.22.0",
+        "babel-preset-react": "^6.22.0",
+        "webpack": "^2.4.1",
+        "webpack-dev-server": "^2.4.1"
+    }
 }
