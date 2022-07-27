@@ -12,8 +12,8 @@
     "dependencies": {
         "react": "^18.0.0",
         "react-dom": "^18.0.0",
-        "@jsplumbtoolkit/browser-ui-react": "^5.9.0",
-        "@jsplumbtoolkit/layout-force-directed": "^5.9.0",
+        "@jsplumbtoolkit/browser-ui-react": "^5.10.0",
+        "@jsplumbtoolkit/layout-force-directed": "^5.10.0",
         "jsplumbtoolkit-demo-support": "^1.0.0"
     },
     "devDependencies": {
