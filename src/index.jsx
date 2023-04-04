@@ -1,10 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { JsPlumbToolkitSurfaceComponent }  from '@jsplumbtoolkit/browser-ui-react'
-import { StraightConnector, BlankEndpoint, LabelOverlay, ArrowOverlay } from '@jsplumbtoolkit/browser-ui'
-import { newInstance } from "@jsplumbtoolkit/browser-ui-react"
-import { ForceDirectedLayout } from "@jsplumbtoolkit/layout-force-directed"
+import { newInstance, JsPlumbToolkitSurfaceComponent }  from '@jsplumbtoolkit/browser-ui-react'
+import {
+    ForceDirectedLayout,
+    StraightConnector,
+    BlankEndpoint,
+    LabelOverlay,
+    ArrowOverlay
+} from '@jsplumbtoolkit/browser-ui'
 
 import BoneComponent from "./bone-component.jsx"
 

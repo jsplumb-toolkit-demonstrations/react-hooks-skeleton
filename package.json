@@ -1,6 +1,6 @@
 {
     "name": "jsplumbtoolkit-react-hooks-skeleton",
-    "version": "5.8.0",
+    "version": "6.0.0",
     "description": "Integration between jsPlumb Toolkit and React - Skeleton, using Hooks",
     "main": "index.js",
     "author": "jsPlumb <hello@jsplumbtoolkit.com> (https://jsplumbtoolkit.com)",
@@ -12,8 +12,7 @@
     "dependencies": {
         "react": "^18.0.0",
         "react-dom": "^18.0.0",
-        "@jsplumbtoolkit/browser-ui-react": "^5.12.0",
-        "@jsplumbtoolkit/layout-force-directed": "^5.12.0",
+        "@jsplumbtoolkit/browser-ui-react": "^6.0.0",
         "jsplumbtoolkit-demo-support": "^1.0.0"
     },
     "devDependencies": {
